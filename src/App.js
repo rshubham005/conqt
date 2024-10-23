@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Header from "./components/Header/index";
+import Checkboxes from "./components/Checkboxes/index";
+import { useState } from "react";
+import ItemForm from "./components/ItemForm";
+import SupplierForm from "./components/SupplierForm";
 function App() {
+  const [supplierCheck, setSupplierCheck] = useState(false);
+  const [itemCheck, setItemCheck] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Checkboxes
+        setSupplierCheck={(data) => setSupplierCheck(data)}
+        setItemCheck={(data) => setItemCheck(data)}
+      />
+
+      {itemCheck ? <ItemForm /> : supplierCheck ? <SupplierForm /> : null}
     </div>
   );
 }

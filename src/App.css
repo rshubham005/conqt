@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+.small-shadow {
+  box-shadow: 0px 1px 2px 0px #101828 5%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.medium-shadow {
+  box-shadow: 0px 1px 4px 0px #101828 15%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.large-shadow {
+  box-shadow: 0px 1px 4px 0px #101828 25%;
 }
+.primary {
+  background-color: #007aff;
+}
+.secondary {
+  background-color: #7f56d9;
+}
+.tertiary {
+  background: rgba(235, 238, 253, 1);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.primary-text {
+  color: #007aff;
+}
+.secondary-text {
+  color: #7f56d9;
+}
+.tertiary-text {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.primary-heading {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondary-heading {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+}
+.teartiary-heading {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.quaternary-heading {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.bold-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.regualar-text {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.caption {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.small-radius {
+  border-radius: 3px;
+}
+.medium-radius {
+  border-radius: 6px;
+}
+.large-radius {
+  border-radius: 12px;
+}
+.extralarge-radius {
+  border-radius: 24px;
+}
+.round {
+  border-radius: 999px;
+}
+.text-center {
+  text-align: center;
+}
+.item-center {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.logo {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+.checkbox-container {
+  margin: 10px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.input-field {
+  width: 300px;
+  height: 28px;
+  border: none;
+  outline: rgba(128, 128, 128, 0.582);
+}
+.input-block-pair {
+  display: flex;
+  justify-content: space-between;
+}
+.form-block {
+  width: 750px;
+  padding: 10px 20px;
 }
